@@ -250,8 +250,7 @@ img {
   padding: clamp(42px, 6vw, 70px);
 }
 
-.featured-card h2,
-.about-section h2 {
+.featured-card h2 {
   margin: 0 0 26px;
   color: var(--ink);
   font-size: clamp(2rem, 2.9vw, 2.45rem);
@@ -259,8 +258,7 @@ img {
   line-height: 1.12;
 }
 
-.featured-card p:not(.project-label),
-.about-section > p {
+.featured-card p:not(.project-label) {
   margin: 0 0 22px;
   color: #55555d;
   font-size: clamp(1.18rem, 1.6vw, 1.45rem);
@@ -371,14 +369,6 @@ img {
 
 .form-lines span:nth-child(3) {
   width: 58%;
-}
-
-.about-section {
-  display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(280px, 0.65fr);
-  gap: clamp(26px, 6vw, 90px);
-  padding: clamp(76px, 10vw, 122px) clamp(30px, 10vw, 136px);
-  background: var(--paper);
 }
 
 .case-hero {
@@ -534,7 +524,6 @@ dt {
   .site-header,
   .hero,
   .featured-card,
-  .about-section,
   .case-hero,
   .case-section {
     grid-template-columns: 1fr;
@@ -614,7 +603,6 @@ dt {
   }
 
   .design-section,
-  .about-section,
   .case-hero,
   .case-section,
   .case-next {
