@@ -172,15 +172,15 @@ img {
   max-width: 590px;
   margin: 0;
   color: var(--soft-ink);
-  font-size: clamp(2.9rem, 3.45vw, 3.72rem);
-  font-weight: 350;
-  letter-spacing: 0;
-  line-height: 1.18;
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: -0.15em;
+  line-height: 48px;
 }
 
 .hero h1 strong {
   color: var(--ink);
-  font-weight: 850;
+  font-weight: 700;
 }
 
 .portrait-wrap {
@@ -590,7 +590,7 @@ dt {
   }
 
   .hero h1 {
-    font-size: clamp(2.45rem, 12vw, 3.2rem);
+    font-size: 40px;
   }
 
   .project-copy,
