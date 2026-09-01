@@ -47,14 +47,11 @@ img {
 }
 
 .wordmark {
-  color: var(--lime);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.7rem, 3vw, 2.15rem);
-  font-weight: 900;
+  font-family: "Nabla", system-ui, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
   letter-spacing: 0;
-  line-height: 1;
-  text-shadow: 0.04em 0.04em 0 #d7d98c;
-  transform: rotate(-2deg);
+  line-height: 40px;
 }
 
 .site-nav {
@@ -96,11 +93,10 @@ img {
 
 .brand {
   gap: 12px;
-  color: var(--lime);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.45rem;
-  font-weight: 900;
-  text-shadow: 0.04em 0.04em 0 #d7d98c;
+  font-family: "Nabla", system-ui, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 40px;
 }
 
 .brand-mark {
