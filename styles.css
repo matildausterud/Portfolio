@@ -3,11 +3,26 @@
   --soft-ink: #6d6d74;
   --paper: #f7f7f7;
   --line: #d9d9df;
-  --lime: #c0c74a;
+  --lime: #c9c94f;
   --lavender: #e6e9fb;
   --lavender-line: #d6dbf7;
   --blush: #fae6ee;
   --white: #ffffff;
+}
+
+@font-palette-values --wordmark-lime {
+  font-family: "Nabla";
+  override-colors:
+    0 #c9c94f,
+    1 #c9c94f,
+    2 #c9c94f,
+    3 #c9c94f,
+    4 #c9c94f,
+    5 #c9c94f,
+    6 #c9c94f,
+    7 #c9c94f,
+    8 #c9c94f,
+    9 #c9c94f;
 }
 
 * {
@@ -47,9 +62,11 @@ img {
 }
 
 .wordmark {
+  color: var(--lime);
   font-family: "Nabla", system-ui, sans-serif;
   font-size: 24px;
   font-weight: 400;
+  font-palette: --wordmark-lime;
   letter-spacing: 0;
   line-height: 40px;
 }
@@ -93,9 +110,11 @@ img {
 
 .brand {
   gap: 12px;
+  color: var(--lime);
   font-family: "Nabla", system-ui, sans-serif;
   font-size: 24px;
   font-weight: 400;
+  font-palette: --wordmark-lime;
   line-height: 40px;
 }
 
