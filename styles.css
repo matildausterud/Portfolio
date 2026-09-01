@@ -196,8 +196,8 @@ img {
 .portrait-wrap img {
   width: 100%;
   aspect-ratio: 5 / 6;
-  object-fit: cover;
-  object-position: center top;
+  object-fit: contain;
+  object-position: center bottom;
 }
 
 .design-section {
