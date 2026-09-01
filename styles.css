@@ -196,10 +196,22 @@ img {
   grid-template-columns: minmax(300px, 0.92fr) minmax(280px, 0.58fr);
   gap: clamp(34px, 7vw, 86px);
   align-items: center;
+  max-width: 960px;
+  margin-inline: auto;
+  border-radius: 18px;
+  background: linear-gradient(90deg, var(--white) 0 50%, #f9fafc 50%);
+  box-shadow: 0 18px 45px rgba(32, 32, 41, 0.08);
+  transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
-.featured-card article {
+.featured-card:is(:hover, :focus-visible) {
+  transform: translateY(-3px);
+  box-shadow: 0 24px 62px rgba(32, 32, 41, 0.13);
+}
+
+.project-copy {
   max-width: 480px;
+  padding: clamp(32px, 6vw, 54px);
 }
 
 .featured-card h2,
@@ -311,62 +323,6 @@ img {
 
 .form-lines span:nth-child(3) {
   width: 58%;
-}
-
-.text-link {
-  display: inline-flex;
-  align-items: center;
-  min-height: 40px;
-  border-bottom: 2px solid var(--lime);
-  color: var(--ink);
-  font-weight: 800;
-}
-
-.project-list {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 22px;
-  margin-top: clamp(34px, 6vw, 76px);
-}
-
-.project-preview {
-  display: grid;
-  gap: 18px;
-  color: var(--ink);
-  font-size: 1.2rem;
-  font-weight: 800;
-}
-
-.preview-visual {
-  min-height: 190px;
-  border: 1px solid rgba(105, 111, 150, 0.18);
-  background-color: var(--lavender);
-}
-
-.preview-visual.circuit {
-  background-image:
-    linear-gradient(90deg, transparent 23px, rgba(198, 205, 244, 0.9) 24px, transparent 25px),
-    linear-gradient(transparent 23px, rgba(198, 205, 244, 0.9) 24px, transparent 25px);
-  background-size: 48px 48px;
-}
-
-.preview-visual.dashboard {
-  position: relative;
-  background:
-    linear-gradient(#243b91 0 42px, transparent 42px),
-    linear-gradient(90deg, #ffffff 0 64%, #f5f6fb 64%),
-    var(--lavender);
-}
-
-.preview-visual.dashboard::after {
-  position: absolute;
-  right: 38px;
-  bottom: 34px;
-  width: 48%;
-  height: 86px;
-  border: 1px solid #d8dceb;
-  background: repeating-linear-gradient(#ffffff 0 16px, #eef1f8 17px 18px);
-  content: "";
 }
 
 .about-section {
@@ -542,10 +498,6 @@ dt {
 
   .portrait-wrap {
     justify-self: center;
-  }
-
-  .project-list {
-    grid-template-columns: 1fr;
   }
 
   .case-summary {
