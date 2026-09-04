@@ -122,11 +122,11 @@ img {
 }
 
 .hero-copy {
-  padding-top: 64px;
+  padding-top: 85px;
 }
 
 .hero-copy p {
-  margin: 0 0 22px;
+  margin: 0 0 16px;
   color: var(--muted);
   font-size: 16px;
   font-weight: 300;
@@ -348,6 +348,40 @@ img {
   font-size: 16px;
   font-weight: 200;
   line-height: 19px;
+}
+
+.about-talk-page {
+  min-height: calc(100vh - 96px);
+  align-items: start;
+  padding: 48px clamp(20px, 8vw, 120px) 76px;
+}
+
+.about-talk-page .about-panel {
+  position: relative;
+  isolation: isolate;
+  width: min(calc(100% - 40px), 760px);
+  margin-top: 0;
+  padding: 132px 0 238px;
+  background:
+    url("assets/about-talk-background.png") center top / 100% 100% no-repeat;
+}
+
+.about-talk-page .about-panel h1 {
+  position: relative;
+  z-index: 1;
+  width: min(100% - 48px, 548px);
+  margin-bottom: 64px;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 44px;
+  text-align: center;
+}
+
+.about-talk-page .about-list {
+  position: relative;
+  z-index: 1;
+  min-height: 0;
+  gap: 42px;
 }
 
 .lf-case-hero {
@@ -1253,6 +1287,31 @@ img {
     margin-bottom: 52px;
     font-size: 32px;
     line-height: 40px;
+  }
+
+  .about-talk-page {
+    padding: 44px 0 86px;
+  }
+
+  .about-talk-page .about-panel {
+    width: min(100% - 32px, 548px);
+    margin-top: 0;
+    padding: 84px 0 168px;
+  }
+
+  .about-talk-page .about-panel h1,
+  .about-talk-page .about-list {
+    width: min(100% - 42px, 548px);
+  }
+
+  .about-talk-page .about-panel h1 {
+    margin-bottom: 48px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .about-talk-page .about-list {
+    gap: 36px;
   }
 
   .lf-case-hero {
