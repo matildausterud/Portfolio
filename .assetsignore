@@ -1,0 +1,9 @@
+.git
+.github
+.DS_Store
+assets/.DS_Store
+node_modules
+dist
+.env
+README.md
+wrangler.jsonc
