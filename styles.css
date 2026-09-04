@@ -245,7 +245,7 @@ img {
   margin: 0 0 24px;
   color: var(--text);
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0;
   line-height: 1.08;
 }
@@ -337,9 +337,9 @@ img {
 .about-item h2 {
   margin: 0 0 14px;
   color: #22242c;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 300;
-  line-height: 32px;
+  line-height: 28px;
 }
 
 .about-item p {
@@ -353,7 +353,7 @@ img {
 .about-talk-page {
   min-height: calc(100vh - 96px);
   align-items: start;
-  padding: 48px clamp(20px, 8vw, 120px) 76px;
+  padding: 56px clamp(20px, 8vw, 120px) 80px;
 }
 
 .about-talk-page .about-panel {
@@ -361,9 +361,8 @@ img {
   isolation: isolate;
   width: min(calc(100% - 40px), 760px);
   margin-top: 0;
-  padding: 132px 0 238px;
-  background:
-    url("assets/about-talk-background.png") center top / 100% 100% no-repeat;
+  padding: 0;
+  background: transparent;
 }
 
 .about-talk-page .about-panel h1 {
@@ -371,9 +370,9 @@ img {
   z-index: 1;
   width: min(100% - 48px, 548px);
   margin-bottom: 64px;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 300;
-  line-height: 44px;
+  line-height: 40px;
   text-align: center;
 }
 
@@ -382,6 +381,196 @@ img {
   z-index: 1;
   min-height: 0;
   gap: 42px;
+}
+
+.recommendations {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  margin-top: 0;
+  padding: 72px clamp(20px, 8vw, 120px) 96px;
+  background: var(--blue);
+  overflow: hidden;
+}
+
+.recommendations::after {
+  content: none;
+}
+
+.recommendations-inner {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 760px);
+}
+
+.recommendations h2 {
+  width: min(100% - 48px, 548px);
+  margin: 0 auto 32px;
+  color: #22242c;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32px;
+  text-align: center;
+}
+
+.recommendation-list {
+  display: grid;
+  width: min(100% - 48px, 548px);
+  gap: 16px;
+  margin: 0 auto;
+}
+
+.recommendation-card {
+  margin: 0;
+  padding: 24px;
+  border: 1px solid rgba(217, 214, 205, 0.72);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.recommendation-card blockquote {
+  margin: 0 0 18px;
+}
+
+.recommendation-card blockquote p {
+  margin: 0 0 12px;
+  color: #414249;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.recommendation-card blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.recommendation-preview {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+}
+
+.recommendation-collapsible:has(.recommendation-more[open]) .recommendation-preview {
+  display: none;
+}
+
+.recommendation-more summary {
+  width: max-content;
+  margin-top: -5px;
+  color: #6f7077;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  list-style: none;
+}
+
+.recommendation-more summary::-webkit-details-marker {
+  display: none;
+}
+
+.recommendation-more summary:hover,
+.recommendation-more summary:focus-visible {
+  color: #22242c;
+}
+
+.recommendation-more summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.recommendation-more[open] summary {
+  margin-bottom: 12px;
+}
+
+.recommendation-more[open] summary {
+  order: 2;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.recommendation-more[open] {
+  display: flex;
+  flex-direction: column;
+}
+
+.recommendation-more .less-label {
+  display: none;
+}
+
+.recommendation-more[open] .more-label {
+  display: none;
+}
+
+.recommendation-more[open] .less-label {
+  display: inline;
+}
+
+.recommendation-card figcaption {
+  display: grid;
+  gap: 2px;
+}
+
+.recommendation-card figcaption strong {
+  color: #22242c;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 21px;
+}
+
+.recommendation-card figcaption span {
+  color: #8b8c93;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 18px;
+}
+
+.linkedin-cta {
+  display: grid;
+  min-height: 72px;
+  grid-template-columns: auto 1fr auto;
+  gap: 16px;
+  align-items: center;
+  margin-top: 24px;
+  padding: 14px 20px;
+  border: 1px solid rgba(217, 214, 205, 0.72);
+  border-radius: 8px;
+  background: var(--surface);
+  color: #22242c;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.linkedin-cta:hover {
+  box-shadow: 0 12px 28px rgba(34, 36, 44, 0.08);
+  transform: translateY(-2px);
+}
+
+.linkedin-cta:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.linkedin-cta-icon {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--panel);
+  color: var(--accent);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.linkedin-cta-arrow {
+  color: #6f7077;
+  font-size: 28px;
+  font-weight: 300;
 }
 
 .lf-case-hero {
@@ -1290,13 +1479,13 @@ img {
   }
 
   .about-talk-page {
-    padding: 44px 0 86px;
+    padding: 56px 0 80px;
   }
 
   .about-talk-page .about-panel {
     width: min(100% - 32px, 548px);
     margin-top: 0;
-    padding: 84px 0 168px;
+    padding: 0;
   }
 
   .about-talk-page .about-panel h1,
@@ -1312,6 +1501,25 @@ img {
 
   .about-talk-page .about-list {
     gap: 36px;
+  }
+
+  .recommendations {
+    margin-top: 0;
+    padding: 56px 0 72px;
+  }
+
+  .recommendations h2,
+  .recommendation-list {
+    width: min(100% - 42px, 548px);
+  }
+
+  .recommendations h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .recommendation-card {
+    padding: 20px;
   }
 
   .lf-case-hero {
