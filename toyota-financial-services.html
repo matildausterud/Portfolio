@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Toyota Financial Services | matildas.design</title>
+    <meta name="description" content="Portfolio-case för Toyota Financial Services av Matilda Usterud.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&family=Nabla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="index.html" aria-label="matildas.design startsida">matildas.design</a>
+      <nav class="site-nav" aria-label="Huvudnavigation">
+        <a class="nav-design" href="index.html">Design</a>
+        <a class="nav-about" href="om-mig.html">Om mig</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="tfs-case" aria-labelledby="tfs-title">
+        <div class="tfs-case-hero">
+          <img class="tfs-case-image" src="assets/tfs-hero.png" alt="Skärmar från Toyota Financial Services-plattformen">
+        </div>
+
+        <article class="tfs-case-copy">
+          <h1 id="tfs-title">Ett gemensamt verktyg för bilaffären</h1>
+          <p class="tfs-case-lead">Hur gör man en komplex bilaffär enkel att hantera?</p>
+          <p>Det här var ett två år långt uppdrag där vi från grunden tog fram Magic Window – en ny plattform för Toyota Financial Services återförsäljare. Teamet bestod av mig, tre produktägare, 10 utvecklare, en backend-arkitekt och en scrum master.</p>
+          <p>Målet var att skapa en gemensam plattform som ersatte flera separata system och samlade bilfinansiering, lagerfinansiering och administration på ett ställe – samtidigt som komplexa processer blev enklare och mer intuitiva för återförsäljaren.</p>
+        </article>
+
+        <section class="tfs-problem" aria-labelledby="tfs-problem-title">
+          <div class="tfs-problem-copy">
+            <h2 id="tfs-problem-title">Problemet</h2>
+            <p class="tfs-section-lead">Från flera system till ett sammanhängande flöde</p>
+            <p>Återförsäljarna behövde använda flera olika system för att hantera bilaffären. Kreditansökningar, finansiering, försäkring och lagerfinansiering hanterades separat trots att de var delar av samma process.</p>
+            <p>Målet var att samla allt i Magic Window – ett gemensamt arbetsverktyg för bilaffären.</p>
+          </div>
+
+          <img class="tfs-problem-image" src="assets/tfs-old-systems.png" alt="Gamla separata system som användes i bilaffären">
+        </section>
+
+        <section class="tfs-challenge" aria-labelledby="tfs-challenge-title">
+          <div class="tfs-challenge-copy">
+            <h2 id="tfs-challenge-title">Utmaningen</h2>
+            <p class="tfs-section-lead">Att förstå en komplex verksamhet</p>
+            <p>Eftersom produkten byggdes från grunden behövde jag först förstå både verksamheten och hur återförsäljarna faktiskt arbetade.</p>
+            <p>Genom intervjuer, workshops och nära samarbete med verksamheten kartlade jag behov, processer och beroenden. Flöden och prototyper testades sedan kontinuerligt med användare och itererades innan utveckling.</p>
+            <p>Intervjuer -> Flöden -> Prototyper -> Användartester -> Iteration</p>
+          </div>
+
+          <img class="tfs-challenge-image" src="assets/tfs-research.png" alt="Researchmaterial med roller, flöden och prototyper">
+        </section>
+
+        <section class="tfs-magic" aria-labelledby="tfs-magic-title">
+          <div class="tfs-magic-copy">
+            <h2 id="tfs-magic-title">Magic Window</h2>
+            <p class="tfs-section-lead">En plattform för hela bilaffären</p>
+            <p>Magic Window behövde stödja flera delar av återförsäljarens arbete inom samma produkt.</p>
+          </div>
+
+          <img class="tfs-magic-image" src="assets/tfs-flow.png" alt="Flöde för Magic Window med retail, wholesale och admin">
+        </section>
+
+        <section class="tfs-design" aria-labelledby="tfs-design-title">
+          <div class="tfs-design-copy">
+            <h2 id="tfs-design-title">Design</h2>
+            <p class="tfs-section-lead">Från kalkyl till signerat avtal</p>
+            <p>En stor del av arbetet handlade om att skapa ett tydligt flöde genom en process med mycket information, regler och beroenden.</p>
+            <p>Återförsäljaren skulle kunna följa affären genom systemet och förstå både vad som hade hänt och vad som behövde göras härnäst.</p>
+            <p>Jag arbetade bland annat med:</p>
+            <p>Kreditansökan · KALP · Försäkring · Fakturor · E-signering med BankID</p>
+          </div>
+
+          <div class="tfs-design-images">
+            <img class="tfs-design-desktop-image" src="assets/tfs-design-desktop.png" alt="Desktopvyer för kreditansökan och signering i Magic Window">
+            <img class="tfs-design-mobile-image" src="assets/tfs-design-mobile.png" alt="Mobila vyer för kundens kompletterande uppgifter">
+          </div>
+        </section>
+
+        <section class="tfs-system" aria-labelledby="tfs-system-title">
+          <div class="tfs-system-copy">
+            <h2 id="tfs-system-title">Design system</h2>
+            <p class="tfs-section-lead">En produkt, flera varumärken</p>
+            <p>Parallellt med produktdesignen byggde jag upp Magic Windows designsystem från grunden.</p>
+            <p>Komponenter, properties och Figma Variables gjorde det möjligt att skapa ett konsekvent gränssnitt och samtidigt anpassa samma produkt till flera varumärken.</p>
+          </div>
+
+          <div class="tfs-system-images">
+            <img class="tfs-variables-image" src="assets/tfs-variables.png" alt="Variabler och button tokens för Magic Windows designsystem">
+            <img class="tfs-design-system-image" src="assets/tfs-design-system.png" alt="Översikt över komponenter, typografi, färger och interaktionsmönster i designsystemet">
+          </div>
+        </section>
+
+        <section class="tfs-result" aria-labelledby="tfs-result-title">
+          <div class="tfs-result-copy">
+            <h2 id="tfs-result-title">Från idé till verkliga bilaffärer</h2>
+            <p>Magic Window gick från idé och tidiga prototyper till en lanserad produkt som började användas av både stora och små återförsäljare.</p>
+            <p>Kort efter lanseringen hade över 40 bilaffärer genomförts genom den nya lösningen. Feedback från användare pekade också på att flödet upplevdes som intuitivt och nästan självgående.</p>
+          </div>
+
+          <img class="tfs-result-image" src="assets/tfs-result.png" alt="Resultatvyer från Magic Window efter lansering">
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

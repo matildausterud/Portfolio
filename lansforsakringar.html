@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Länsförsäkringar | matildas.design</title>
+    <meta name="description" content="Portfolio-case för Länsförsäkringar av Matilda Usterud.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&family=Nabla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="index.html" aria-label="matildas.design startsida">matildas.design</a>
+      <nav class="site-nav" aria-label="Huvudnavigation">
+        <a class="nav-design" href="index.html">Design</a>
+        <a class="nav-about" href="om-mig.html">Om mig</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="lf-case" aria-labelledby="case-title">
+        <div class="lf-case-hero">
+          <img class="lf-case-pattern" src="assets/about-pattern.png" alt="">
+          <div class="lf-case-images" aria-label="Skärmbilder från Länsförsäkringar-projektet">
+            <img class="lf-frame-one" src="assets/lf-frame-1.png" alt="Skärm från Behovsguiden">
+            <img class="lf-frame-two" src="assets/lf-frame-2.png" alt="Skärm från sparandekalkyl i Behovsguiden">
+          </div>
+        </div>
+
+        <article class="lf-case-copy">
+          <h1 id="case-title">Från information till interaktion</h1>
+          <p class="lf-case-lead">Hur kan ett statiskt rådgivarverktyg bli ett flexibelt stöd för kundmötet?</p>
+          <p>Det här var ett sex månader långt projekt där vi tog fram nästa version av Behovsguiden – ett verktyg som används av Länsförsäkringars rådgivare i kundmötet.</p>
+          <p>Jag arbetade i ett tvärfunktionellt team med UX, produkt och utveckling, tillsammans med två representanter från bankverksamheten som bidrog med verksamhetsperspektiv och arbetade med gemensamma arbetssätt för rådgivarna.</p>
+          <p>Målet var att skapa ett verktyg som både stärker kundmötet och skapar ett gemensamt arbetssätt för rådgivarna – samtidigt som det öppnar upp för en bredare dialog om kundens behov.</p>
+        </article>
+
+        <section class="lf-problem" aria-labelledby="problem-title">
+          <div class="lf-problem-copy">
+            <h2 id="problem-title">Problemet</h2>
+            <p class="lf-problem-lead">Ett presentationsstöd som inte stödde samtalet</p>
+            <p>Behovsguiden var främst utformad för att presentera information. Men rådgivarna behövde kunna förklara, visualisera och räkna tillsammans med kunden för att skapa förståelse, intresse och förtroende.</p>
+            <p>När verktyget inte räckte till skapade rådgivarna egna lösningar – Excel-kalkyler, PowerPoints och externa webbplatser.</p>
+            <p>Det skapade två problem:</p>
+            <h3>För rådgivaren</h3>
+            <p>Behovsguiden gav inte tillräckligt stöd för att skapa ett värdefullt kundmöte.</p>
+            <h3>För Länsförsäkringar</h3>
+            <p>Kundupplevelsen blev olika beroende på rådgivare och delar av mötet flyttade utanför LF egna verktyg och visuella identitet.</p>
+          </div>
+
+          <img class="lf-problem-image" src="assets/lf-problem-collage.png" alt="Exempel på tidigare verktyg och externa lösningar som användes i rådgivarmötet">
+        </section>
+
+        <section class="lf-research" aria-labelledby="challenge-title">
+          <div class="lf-research-copy">
+            <h2 id="challenge-title">Utmaningen</h2>
+            <p class="lf-section-lead">Väcka intresse – utan att bli dokumenterad rådgivning</p>
+            <p>När vi introducerade interaktiva kalkyler och mer individanpassad information blev gränsen mot rådgivning tydligare.</p>
+            <p>Under arbetets gång behövde vi därför gå tillbaka och justera delar av både innehåll och funktionalitet utifrån juridiska krav, för att säkerställa att Behovsguiden väckte intresse och ledde vidare till dokumenterad rådgivning, utan att ersätta den.</p>
+
+            <h2 id="research-title">Undersökning</h2>
+            <p class="lf-section-lead">Hur arbetar rådgivarna när verktyget inte räcker till?</p>
+            <p>Jag intervjuade 7 rådgivare från olika länsbolag, med fokus på bolån, sparande och pension. Jag kartlade deras arbete före, under och efter kundmötet genom user journeys och flödesdiagram för att förstå var Behovsguiden kunde skapa störst värde.</p>
+
+            <h3>Tre behov blev särskilt tydliga</h3>
+            <h4>01 — Gör det konkret</h4>
+            <p>Rådgivarna behövde kunna räkna och visualisera för att hjälpa kunden förstå vad olika val faktiskt innebär.</p>
+            <h4>02 — Följ samtalet</h4>
+            <p>Kundmöten är inte linjära. Verktyget behövde göra det enkelt att röra sig mellan olika behov och ämnen.</p>
+            <h4>03 — Öppna upp fler behov</h4>
+            <p>Försäkring, juridik, sparande och andra områden behövde finnas nära till hands så att rådgivaren kunde bredda samtalet när ett relevant behov uppstod.</p>
+          </div>
+
+          <img class="lf-research-image" src="assets/lf-research.png" alt="Researchmaterial med user journey och flödesdiagram">
+        </section>
+
+        <section class="lf-solution" aria-labelledby="solution-title">
+          <div class="lf-solution-copy">
+            <h2 id="solution-title">Lösningen</h2>
+            <p class="lf-section-lead">Från presentation till samtalsverktyg</p>
+            <p>Researchen ledde till en ny riktning för Behovsguiden: istället för att bara presentera information skulle verktyget hjälpa rådgivaren att <strong>förklara, visualisera och utforska tillsammans med kunden.</strong></p>
+
+            <h3>01 — Räkna tillsammans</h3>
+            <p>Interaktiva kalkyler för bland annat bolån, sparande och pension gör abstrakta frågor konkreta och hjälper rådgivaren skapa aha-upplevelser.</p>
+          </div>
+
+          <img class="lf-solution-image" src="assets/lf-calculations.png" alt="Fyra vyer med interaktiva kalkyler i Behovsguiden">
+
+          <div class="lf-solution-copy lf-solution-step">
+            <h3>02 — Anpassa mötet efter kunden</h3>
+            <p>En flexibel struktur gör att rådgivaren snabbt kan röra sig mellan olika behov – från bolån och sparande till pension och försäkring.</p>
+          </div>
+
+          <img class="lf-solution-image" src="assets/lf-navigation.png" alt="Navigationsstruktur i Behovsguiden med panel och avtalsområden">
+
+          <div class="lf-solution-copy lf-solution-step">
+            <h3>03 — En vy för rådgivaren, en för kunden</h3>
+            <p>Behovsguiden utvecklades för skärmdelning. Rådgivaren behåller navigation och verktyg på sin skärm, medan kunden endast ser det innehåll som är relevant för samtalet</p>
+          </div>
+
+          <img class="lf-solution-image" src="assets/lf-screens.png" alt="Rådgivarens och kundens vyer vid skärmdelning">
+        </section>
+
+        <section class="lf-testing" aria-labelledby="testing-title">
+          <div class="lf-testing-copy">
+            <h2 id="testing-title">Testa, lära, förbättra</h2>
+            <p>Lösningarna testades löpande med rådgivare genom interaktiva användningstester. Resultaten användes för att justera struktur, innehåll, kalkyler och interaktioner innan överlämning till utveckling.</p>
+            <p>Bilderna nedan visar hur agendan utvecklades efter användningstester – från att inte visas alls till att bli synlig, redigerbar och möjlig att anpassa med egna punkter.</p>
+          </div>
+
+          <img class="lf-testing-image" src="assets/lf-welcome-iterations.png" alt="Två versioner av välkomstvyn där agendan utvecklas efter användningstest">
+        </section>
+
+        <section class="lf-result" aria-labelledby="result-title">
+          <div class="lf-result-copy">
+            <h2 id="result-title">Ett gemensamt sätt att möta kunden</h2>
+            <p>Resultatet är ett verktyg som ger rådgivaren större stöd i kundmötet samtidigt som Länsförsäkringar kan skapa en mer sammanhållen kundupplevelse.</p>
+          </div>
+
+          <img class="lf-result-image" src="assets/lf-final-overview.png" alt="Samlad översikt över Behovsguidens färdiga vyer">
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
