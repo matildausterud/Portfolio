@@ -111,10 +111,10 @@ img {
   position: relative;
   z-index: 2;
   display: grid;
-  width: min(calc(100% - 110px), 931px);
+  width: min(calc(100% - 110px), 995px);
   min-height: 461px;
-  grid-template-columns: 435px 370px;
-  gap: 126px;
+  grid-template-columns: 435px 480px;
+  gap: 80px;
   align-items: start;
   justify-content: center;
   margin: 0 auto;
@@ -165,7 +165,7 @@ img {
 
 .hero-portrait::before {
   position: absolute;
-  right: 0;
+  right: max(180px, calc((100% - 1076px) / 2));
   bottom: 0;
   width: 350px;
   height: 405px;
@@ -197,6 +197,56 @@ img {
   pointer-events: none;
 }
 
+.hero-bird {
+  width: 480px;
+  height: 270px;
+  align-self: start;
+  justify-self: end;
+  margin-top: 60px;
+  overflow: visible;
+  transform: none;
+}
+
+.hero-bird::before {
+  content: none;
+}
+
+.hero-portrait .hero-bird-cloud {
+  position: absolute;
+  z-index: 2;
+  top: -72px;
+  right: 68px;
+  bottom: auto;
+  width: 260px;
+  max-width: none;
+  opacity: 1;
+  transform: translate(2px, -48px) scale(0.91);
+  transform-origin: center;
+  pointer-events: none;
+}
+
+.hero-portrait .hero-bird-cloud-tertiary {
+  top: -8px;
+  right: 245px;
+  width: 180px;
+  opacity: 0.88;
+  transform: translate(-96px, 250px) scale(1.52);
+}
+
+.hero-bird-video {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: contrast(1.08);
+  transform: translate(-47px, 2px) scale(1.21);
+  transform-origin: center;
+  pointer-events: none;
+}
+
 .design {
   position: relative;
   z-index: 1;
@@ -204,7 +254,7 @@ img {
   gap: 48px;
   justify-items: center;
   margin-top: -98px;
-  padding: 190px clamp(20px, 8vw, 120px) 72px;
+  padding: 66px clamp(20px, 8vw, 120px) 72px;
   overflow: hidden;
 }
 
@@ -213,8 +263,21 @@ img {
   z-index: 0;
   top: 0;
   width: min(calc(100% - 360px), 1076px);
-  height: 743px;
+  height: 600px;
   background: var(--panel);
+}
+
+.design-cloud-secondary {
+  position: absolute;
+  z-index: 2;
+  top: -76px;
+  right: 0;
+  width: 378px;
+  max-width: none;
+  opacity: 1;
+  transform: scaleX(-1);
+  transform-origin: right center;
+  pointer-events: none;
 }
 
 .project-card {
@@ -351,9 +414,24 @@ img {
 }
 
 .about-talk-page {
+  position: relative;
   min-height: calc(100vh - 96px);
   align-items: start;
   padding: 56px clamp(20px, 8vw, 120px) 80px;
+}
+
+.about-talk-decoration {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  max-width: none;
+  pointer-events: none;
+}
+
+.about-talk-portrait {
+  bottom: -88px;
+  left: 0;
+  width: 520px;
 }
 
 .about-talk-page .about-panel {
@@ -1290,9 +1368,10 @@ img {
 
 @media (max-width: 920px) {
   .hero {
-    width: min(100% - 44px, 560px);
+    width: min(100% - 44px, 656px);
     min-height: auto;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 390px) 250px;
+    gap: 16px;
     padding-top: 52px;
   }
 
@@ -1309,6 +1388,27 @@ img {
     transform: none;
   }
 
+  .hero-bird {
+    width: 250px;
+    height: 141px;
+    justify-self: end;
+    margin-top: 32px;
+    margin-bottom: 0;
+    transform: none;
+  }
+
+  .hero-portrait .hero-bird-cloud {
+    top: -45px;
+    right: 34px;
+    width: 165px;
+  }
+
+  .hero-portrait .hero-bird-cloud-tertiary {
+    top: 0;
+    right: 190px;
+    width: 105px;
+  }
+
   .hero-portrait img {
     width: 370px;
     max-width: 100%;
@@ -1316,11 +1416,16 @@ img {
   }
 
   .design {
-    padding-top: 56px;
+    padding-top: 66px;
   }
 
   .design-backdrop {
-    height: 100%;
+    height: 600px;
+  }
+
+  .design-cloud-secondary {
+    top: -58px;
+    width: 250px;
   }
 
   .project-card,
@@ -1335,6 +1440,12 @@ img {
 
   .about {
     padding-top: 64px;
+  }
+
+  .about-talk-portrait {
+    bottom: -34px;
+    left: 0;
+    width: 175px;
   }
 
   .lf-case-hero {
@@ -1417,7 +1528,13 @@ img {
 
   .hero {
     width: 100%;
+    grid-template-columns: 1fr;
     padding-inline: 22px;
+  }
+
+  .hero-bird {
+    justify-self: center;
+    margin-top: 0;
   }
 
   .hero h1 {
@@ -1431,6 +1548,13 @@ img {
 
   .hero-portrait img {
     transform: none;
+  }
+
+  .about-talk-portrait {
+    display: block;
+    bottom: -29px;
+    left: 0;
+    width: 150px;
   }
 
   .design {

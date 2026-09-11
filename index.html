@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Nabla&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=pink-height-600">
   </head>
   <body>
     <header class="site-header">
@@ -23,17 +23,21 @@
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
           <p>Välkommen hit!</p>
-          <h1 id="hero-title"><strong>Matilda Usterud</strong> <span>är en UX/UI designer &amp;<br>obotlig pysslare</span></h1>
+          <h1 id="hero-title"><strong>Matilda Usterud</strong> <span>är en<br>UX/UI designer</span></h1>
         </div>
 
-        <div class="hero-portrait" aria-label="Porträtt av Matilda Usterud">
-          <img class="hero-sparkle-gif" src="assets/hero-sparkle.gif" alt="">
-          <img src="assets/profil3.png" alt="Matilda Usterud håller i textilier och ett parasoll">
+        <div class="hero-portrait hero-bird" aria-label="Animerad flygande wireframe-fågel">
+          <img class="hero-bird-cloud" src="assets/cloud.png" alt="" aria-hidden="true">
+          <img class="hero-bird-cloud hero-bird-cloud-tertiary" src="assets/cloud.png" alt="" aria-hidden="true">
+          <video class="hero-bird-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+            <source src="assets/video/wireframe-bird-transparent.webm?v=10" type="video/webm">
+          </video>
         </div>
       </section>
 
       <section class="design" id="design" aria-label="Designcase">
         <div class="design-backdrop" aria-hidden="true"></div>
+        <img class="design-cloud-secondary" src="assets/cloud.png" alt="" aria-hidden="true">
 
         <a class="project-card" href="lansforsakringar.html" aria-label="Öppna case: Länsförsäkringar">
           <div class="project-copy">
@@ -57,5 +61,6 @@
       </section>
 
     </main>
+
   </body>
 </html>
