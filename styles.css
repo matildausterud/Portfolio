@@ -429,7 +429,7 @@ img {
 }
 
 .about-talk-portrait {
-  bottom: -88px;
+  bottom: -112px;
   left: 0;
   width: 520px;
 }
@@ -1443,7 +1443,7 @@ img {
   }
 
   .about-talk-portrait {
-    bottom: -34px;
+    bottom: -42px;
     left: 0;
     width: 175px;
   }
@@ -1552,7 +1552,7 @@ img {
 
   .about-talk-portrait {
     display: block;
-    bottom: -29px;
+    bottom: -36px;
     left: 0;
     width: 150px;
   }
