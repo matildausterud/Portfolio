@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Nabla&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=safari-bird-animated">
+    <link rel="stylesheet" href="styles.css?v=logo-c9c94f">
     <script>
       const appleMobile = /iPad|iPhone|iPod/.test(navigator.userAgent);
       const safari = /Safari/.test(navigator.userAgent) && !/(Chrome|Chromium|CriOS|Edg|OPiOS|FxiOS|Android)/.test(navigator.userAgent);
@@ -73,6 +73,24 @@
         const video = document.querySelector(".hero-bird-video");
         const canvas = document.querySelector(".hero-bird-safari-canvas");
         const context = canvas.getContext("2d", { willReadFrequently: true });
+        let started = false;
+
+        const resizeCanvas = () => {
+          const pixelRatio = Math.min(window.devicePixelRatio || 1, 2);
+          const width = Math.round(canvas.clientWidth * pixelRatio);
+          const height = Math.round(canvas.clientHeight * pixelRatio);
+
+          if (canvas.width !== width || canvas.height !== height) {
+            canvas.width = width;
+            canvas.height = height;
+          }
+
+          context.imageSmoothingEnabled = true;
+          context.imageSmoothingQuality = "high";
+        };
+
+        resizeCanvas();
+        new ResizeObserver(resizeCanvas).observe(canvas);
 
         const renderBird = () => {
           if (video.readyState >= 2) {
@@ -97,10 +115,18 @@
           }
         };
 
-        video.addEventListener("loadeddata", () => {
+        const startBird = () => {
+          if (started) return;
+          started = true;
           video.play().catch(() => {});
           renderBird();
-        }, { once: true });
+        };
+
+        if (video.readyState >= 2) {
+          startBird();
+        } else {
+          video.addEventListener("loadeddata", startBird, { once: true });
+        }
       }
     </script>
 

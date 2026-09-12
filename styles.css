@@ -69,7 +69,8 @@ img {
 }
 
 .wordmark {
-  color: var(--accent);
+  color: #c9c94f;
+  -webkit-text-fill-color: #c9c94f;
   display: inline-flex;
   align-items: center;
   font-family: "Nabla", system-ui, sans-serif;
@@ -260,6 +261,7 @@ img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  image-rendering: auto;
   transform: translate(-47px, 2px) scale(1.21);
   transform-origin: center;
   pointer-events: none;
