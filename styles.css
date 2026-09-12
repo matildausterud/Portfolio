@@ -71,6 +71,7 @@ img {
 .wordmark {
   color: #c9c94f;
   -webkit-text-fill-color: #c9c94f;
+  filter: brightness(0) saturate(100%) invert(79%) sepia(32%) saturate(854%) hue-rotate(18deg) brightness(95%) contrast(88%);
   display: inline-flex;
   align-items: center;
   font-family: "Nabla", system-ui, sans-serif;
