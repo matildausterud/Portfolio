@@ -37,6 +37,7 @@ html {
 
 body {
   margin: 0;
+  overflow-x: clip;
   background: var(--background);
   color: var(--text);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -1516,38 +1517,68 @@ img {
 @media (max-width: 620px) {
   .site-header {
     min-height: auto;
-    align-items: flex-start;
-    flex-direction: column;
-    padding: 22px;
+    align-items: center;
+    flex-direction: row;
+    gap: 14px;
+    padding: 16px;
+  }
+
+  .wordmark {
+    font-size: 19px;
+    line-height: 32px;
   }
 
   .site-nav {
-    width: 100%;
-    justify-content: space-between;
+    width: auto;
+    gap: 18px;
+    font-size: 14px;
   }
 
   .hero {
     width: 100%;
     grid-template-columns: 1fr;
-    padding-inline: 22px;
-  }
-
-  .hero-bird {
-    justify-self: center;
-    margin-top: 0;
+    gap: 8px;
+    padding: 38px 20px 24px;
   }
 
   .hero h1 {
-    font-size: 2.75rem;
+    font-size: 34px;
+    line-height: 41px;
   }
 
   .hero-portrait {
     width: 100%;
-    height: 461px;
+    height: 220px;
   }
 
   .hero-portrait img {
     transform: none;
+  }
+
+  .hero-bird {
+    width: min(100%, 350px);
+    height: 210px;
+    justify-self: center;
+    margin-top: 4px;
+  }
+
+  .hero-bird-video {
+    transform: translate(-12px, 0) scale(1.08);
+  }
+
+  .hero-portrait .hero-bird-cloud {
+    top: -22px;
+    right: 22px;
+    width: 145px;
+    transform: translate(0, -18px) scale(0.86);
+  }
+
+  .hero-portrait .hero-bird-cloud-tertiary {
+    top: 24px;
+    right: auto;
+    left: -8px;
+    width: 100px;
+    transform: translate(0, 112px) scale(1.1);
   }
 
   .about-talk-portrait {
@@ -1559,7 +1590,8 @@ img {
 
   .design {
     gap: 48px;
-    padding: 42px 18px 44px;
+    margin-top: 0;
+    padding: 48px 16px 44px;
   }
 
   .design-backdrop {
@@ -1567,13 +1599,23 @@ img {
   }
 
   .project-card {
+    height: auto;
     min-height: auto;
     border-radius: 16px;
   }
 
   .project-copy,
   .project-media {
-    padding: 30px 24px;
+    padding: 28px 22px;
+  }
+
+  .project-copy h2 {
+    overflow-wrap: anywhere;
+    font-size: 22px;
+  }
+
+  .project-media {
+    min-height: 210px;
   }
 
   .about {
@@ -1603,7 +1645,7 @@ img {
   }
 
   .about-talk-page {
-    padding: 56px 0 80px;
+    padding: 44px 0 96px;
   }
 
   .about-talk-page .about-panel {
@@ -1618,9 +1660,9 @@ img {
   }
 
   .about-talk-page .about-panel h1 {
-    margin-bottom: 48px;
-    font-size: 32px;
-    line-height: 40px;
+    margin-bottom: 40px;
+    font-size: 28px;
+    line-height: 36px;
   }
 
   .about-talk-page .about-list {
@@ -1629,7 +1671,7 @@ img {
 
   .recommendations {
     margin-top: 0;
-    padding: 56px 0 72px;
+    padding: 64px 0 72px;
   }
 
   .recommendations h2,
@@ -1638,8 +1680,8 @@ img {
   }
 
   .recommendations h2 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 22px;
+    line-height: 30px;
   }
 
   .recommendation-card {
