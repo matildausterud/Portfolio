@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Designsystem | matildas.design</title>
+    <meta name="description" content="Portfolio-case om ett skalbart designsystem för flera varumärken av Matilda Usterud.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&family=Nabla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="index.html" aria-label="matildas.design startsida">matildas.design</a>
+      <nav class="site-nav" aria-label="Huvudnavigation">
+        <a class="nav-design" href="index.html">Design</a>
+        <a class="nav-about" href="om-mig.html">Om mig</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="tfs-case design-system-case" aria-labelledby="design-system-title">
+        <div class="design-system-case-hero">
+          <img class="design-system-case-image" src="assets/design-system-hero.png" alt="Designsystemets typografi, komponenter, färgtokens och inställningar">
+        </div>
+
+        <article class="tfs-case-copy">
+          <h1 id="design-system-title">Ett skalbart designsystem för flera varumärken</h1>
+          <p class="tfs-case-lead">Hur bygger man ett gemensamt designspråk som samtidigt fungerar för olika varumärken?</p>
+          <p>Jag tog fram designsystemet för Toyota Financial Services nya plattform Målet var att skapa ett skalbar system som kunde växa med produkten och samtidigt anpassas till flera varumärkens visuella uttryck.</p>
+        </article>
+
+        <section class="design-system-tokens" aria-labelledby="tokens-title">
+          <div class="design-system-tokens-copy">
+            <h2 id="tokens-title">Tokens</h2>
+            <h3>Primitive tokens</h3>
+            <p>Jag började med att sätta vilka färger systemet skulle bestå av. Sedan satte jag dessa som lokala variabler.</p>
+          </div>
+
+          <img class="design-system-tokens-image" src="assets/primitive-tokens.png" alt="Primitiva färgtokens för grått, blått, rött, gult och grönt">
+
+          <div class="design-system-semantic">
+            <h3>Semantic tokens</h3>
+            <p>Jag skapade semantiska tokens för att beskriva färger utifrån deras roller i gränssnittet istället för deras specifika värde. Det gjorde systemet enklare att förstå och underhålla, samtidigt som design och utveckling fick ett gemensamt språk för hur färger används i gränssnittet.</p>
+
+            <img class="design-system-semantic-image" src="assets/semantic-tokens.png" alt="Semantiska färgtokens för ytor, text, ikoner och kantlinjer">
+          </div>
+
+          <div class="design-system-brand">
+            <h3>Brand tokens</h3>
+            <p>Jag skapade brand tokens med modes för de olika varumärken och kopplade dem till de komponenter som bär varumärkets visuella identitet, exempelvis knappar och navigation.</p>
+            <p>Genom att byta brand mode på en överordnad frame uppdateras färgerna automatiskt i alla kopplade komponenter. På så sätt kunde samma komponenter och gränssnitt återanvändas för flera varumärken utan att skapa separata versioner.</p>
+
+            <img class="design-system-brand-image" src="assets/brand-tokens.png" alt="Brand tokens och komponenter anpassade för flera varumärken">
+          </div>
+        </section>
+
+        <section class="design-system-components" aria-labelledby="components-title">
+          <div class="design-system-components-copy">
+            <h2 id="components-title">Komponenter</h2>
+            <p>Jag definierade tokens för återkommande egenskaper som radius, spacing, padding och ikonstorlek.</p>
+            <p>Dessa refererar tillbaka till systemets gemensamma värden, vilket gjorde det möjligt att ändra ett grundvärde och låta förändringen följa med genom systemet.</p>
+            <p>Jag byggde även komponenterna med variants och properties för att kunna hantera olika states, storlekar och innehåll inom samma komponent.</p>
+          </div>
+
+          <img class="design-system-components-image" src="assets/components.png" alt="Komponenttokens, knappvarianter, properties och mått">
+        </section>
+
+        <section class="design-system-foundations" aria-labelledby="foundations-title">
+          <div class="design-system-foundations-copy">
+            <h2 id="foundations-title">Typografi, Ikoner, skuggor</h2>
+            <p>Jag definierade principer för typografi, ikoner och effekter för att skapa ett enhetligt visuellt uttryck. Tillgänglighet var en del av arbetet, bland annat genom kontraster, typografi och storlekar.</p>
+          </div>
+
+          <img class="design-system-foundations-image" src="assets/typography-icons-shadows.png" alt="Typografisk skala, ikoner och tre nivåer av skuggor">
+        </section>
+
+        <section class="design-system-result" aria-labelledby="design-system-result-title">
+          <div class="design-system-result-copy">
+            <h2 id="design-system-result-title">Ett system att bygga vidare på</h2>
+            <p>Resultatet blev en gemensam grund där tokens, komponenter och brand modes hänger ihop i ett system. Det gjorde det möjligt att återanvända samma designlogik genom produkten och samtidigt anpassa gränssnittet för fyra olika varumärken.</p>
+            <p>För mig blev arbetet ett tydligt exempel på hur ett designsystem kan vara mer än ett komponentbibliotek, det kan skapa en gemensam logik för hur en produkt designas och byggs.</p>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
