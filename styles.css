@@ -1684,7 +1684,40 @@ img {
 
   .design-system-case-hero {
     min-height: 0;
-    padding: 64px 0;
+    box-sizing: border-box;
+    padding: 64px 24px;
+  }
+
+  .design-system-case {
+    overflow-x: hidden;
+  }
+
+  .design-system-case-image,
+  .design-system-tokens-image,
+  .design-system-semantic-image,
+  .design-system-brand-image,
+  .design-system-components-image,
+  .design-system-foundations-image {
+    width: 100%;
+  }
+
+  .design-system-case .tfs-case-copy,
+  .design-system-tokens-copy,
+  .design-system-components-copy,
+  .design-system-foundations-copy,
+  .design-system-result-copy {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .design-system-case .tfs-case-copy,
+  .design-system-tokens,
+  .design-system-components,
+  .design-system-foundations,
+  .design-system-result {
+    box-sizing: border-box;
+    padding-right: 24px;
+    padding-left: 24px;
   }
 
   .lf-case-images {
@@ -1959,21 +1992,52 @@ img {
 
   .design-system-case-hero {
     min-height: 0;
-    padding: 48px 0;
+    box-sizing: border-box;
+    padding: 32px 16px;
   }
 
   .design-system-case-image {
-    width: min(100% - 32px, 520px);
+    width: 100%;
+  }
+
+  .design-system-case {
+    overflow-x: hidden;
+  }
+
+  .design-system-tokens-copy,
+  .design-system-components-copy,
+  .design-system-foundations-copy,
+  .design-system-result-copy {
+    width: 100%;
+  }
+
+  .design-system-case .tfs-case-copy {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 40px 20px 64px;
+  }
+
+  .design-system-case .tfs-case-copy h1 {
+    overflow-wrap: break-word;
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .design-system-case .tfs-case-lead {
+    margin-bottom: 28px;
+    font-size: 19px;
+    line-height: 26px;
   }
 
   .design-system-tokens {
-    padding-bottom: 64px;
+    box-sizing: border-box;
+    padding: 0 20px 64px;
   }
 
   .design-system-tokens h2 {
-    margin-bottom: 40px;
-    font-size: 32px;
-    line-height: 40px;
+    margin-bottom: 32px;
+    font-size: 30px;
+    line-height: 38px;
   }
 
   .design-system-tokens h3 {
@@ -1983,7 +2047,7 @@ img {
 
   .design-system-tokens-image {
     width: 100%;
-    margin-top: 48px;
+    margin-top: 40px;
   }
 
   .design-system-semantic {
@@ -1992,7 +2056,7 @@ img {
 
   .design-system-semantic-image {
     width: 100%;
-    margin-top: 48px;
+    margin-top: 40px;
   }
 
   .design-system-brand {
@@ -2001,44 +2065,55 @@ img {
 
   .design-system-brand-image {
     width: 100%;
-    margin-top: 48px;
+    margin-top: 40px;
   }
 
   .design-system-components {
-    padding-bottom: 64px;
+    box-sizing: border-box;
+    padding: 0 20px 64px;
   }
 
   .design-system-components h2 {
-    font-size: 32px;
-    line-height: 40px;
+    margin-bottom: 28px;
+    font-size: 30px;
+    line-height: 38px;
   }
 
   .design-system-components-image {
     width: 100%;
-    margin-top: 48px;
+    margin-top: 40px;
   }
 
   .design-system-foundations {
-    padding-bottom: 64px;
+    box-sizing: border-box;
+    padding: 0 20px 64px;
   }
 
   .design-system-foundations h2 {
-    font-size: 32px;
-    line-height: 40px;
+    margin-bottom: 28px;
+    font-size: 30px;
+    line-height: 38px;
   }
 
   .design-system-foundations-image {
     width: 100%;
-    margin-top: 48px;
+    margin-top: 40px;
   }
 
   .design-system-result {
-    padding-bottom: 64px;
+    box-sizing: border-box;
+    padding: 0 20px 64px;
   }
 
   .design-system-result h2 {
-    font-size: 32px;
-    line-height: 40px;
+    margin-bottom: 28px;
+    overflow-wrap: break-word;
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .design-system-result p + p {
+    margin-top: 28px;
   }
 
   .tfs-case-copy {
