@@ -501,6 +501,32 @@ img {
   overflow: hidden;
 }
 
+@media (min-width: 921px) {
+  .about-talk-page {
+    min-height: 0;
+    padding-bottom: 112px;
+  }
+
+  .about-talk-portrait {
+    bottom: -96px;
+    right: calc(50% + 241px);
+    left: auto;
+    width: 520px;
+  }
+
+  .about-talk-page + .recommendations {
+    margin-top: 0;
+    padding-top: 112px;
+    padding-bottom: 160px;
+  }
+}
+
+@media (min-width: 921px) and (max-width: 1200px) {
+  .about-talk-portrait {
+    width: 300px;
+  }
+}
+
 .recommendations::after {
   content: none;
 }
