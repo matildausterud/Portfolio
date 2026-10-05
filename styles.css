@@ -1122,6 +1122,10 @@ img {
   margin-top: 112px;
 }
 
+.design-system-semantic p + p {
+  margin-top: 24px;
+}
+
 .design-system-semantic-image {
   display: block;
   width: min(100% - 48px, 786px);

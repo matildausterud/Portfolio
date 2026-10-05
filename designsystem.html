@@ -42,15 +42,16 @@
 
           <div class="design-system-semantic">
             <h3>Semantic tokens</h3>
-            <p>Jag skapade semantiska tokens för att beskriva färger utifrån deras roller i gränssnittet istället för deras specifika värde. Det gjorde systemet enklare att förstå och underhålla, samtidigt som design och utveckling fick ett gemensamt språk för hur färger används i gränssnittet.</p>
+            <p>Jag skapade semantiska tokens som beskriver färger utifrån deras funktion i gränssnittet, snarare än deras specifika färgvärde. Det gjorde systemet enklare att förstå och gav design och utveckling ett gemensamt språk.</p>
+            <p>Tokenstrukturen och namngivningen tog jag fram i nära samarbete med utvecklarna, så att färger, typografi och andra värden följde samma logik i design och kod.</p>
 
             <img class="design-system-semantic-image" src="assets/semantic-tokens.png" alt="Semantiska färgtokens för ytor, text, ikoner och kantlinjer">
           </div>
 
           <div class="design-system-brand">
             <h3>Brand tokens</h3>
-            <p>Jag skapade brand tokens med modes för de olika varumärken och kopplade dem till de komponenter som bär varumärkets visuella identitet, exempelvis knappar och navigation.</p>
-            <p>Genom att byta brand mode på en överordnad frame uppdateras färgerna automatiskt i alla kopplade komponenter. På så sätt kunde samma komponenter och gränssnitt återanvändas för flera varumärken utan att skapa separata versioner.</p>
+            <p>För att samma designsystem skulle fungera för flera varumärken skapade jag brand tokens med separata modes. Dessa kopplades till komponenter som bär varumärkets identitet, exempelvis knappar och navigation.</p>
+            <p>Genom att byta brand mode uppdateras färgerna automatiskt i alla kopplade komponenter. Samma komponenter och gränssnitt kan därför återanvändas utan att skapa separata versioner för varje varumärke.</p>
 
             <img class="design-system-brand-image" src="assets/brand-tokens.png" alt="Brand tokens och komponenter anpassade för flera varumärken">
           </div>
@@ -59,9 +60,8 @@
         <section class="design-system-components" aria-labelledby="components-title">
           <div class="design-system-components-copy">
             <h2 id="components-title">Komponenter</h2>
-            <p>Jag definierade tokens för återkommande egenskaper som radius, spacing, padding och ikonstorlek.</p>
-            <p>Dessa refererar tillbaka till systemets gemensamma värden, vilket gjorde det möjligt att ändra ett grundvärde och låta förändringen följa med genom systemet.</p>
-            <p>Jag byggde även komponenterna med variants och properties för att kunna hantera olika states, storlekar och innehåll inom samma komponent.</p>
+            <p>Jag skapade component tokens för återkommande egenskaper som radius, spacing, padding och ikonstorlek. Genom att koppla dem till gemensamma grundvärden kunde förändringar göras centralt och slå igenom i hela systemet.</p>
+            <p>Komponenterna byggdes med variants och properties för att hantera olika states, storlekar och innehåll utan att skapa onödiga dubbletter.</p>
           </div>
 
           <img class="design-system-components-image" src="assets/components.png" alt="Komponenttokens, knappvarianter, properties och mått">
@@ -70,7 +70,7 @@
         <section class="design-system-foundations" aria-labelledby="foundations-title">
           <div class="design-system-foundations-copy">
             <h2 id="foundations-title">Typografi, Ikoner, skuggor</h2>
-            <p>Jag definierade principer för typografi, ikoner och effekter för att skapa ett enhetligt visuellt uttryck. Tillgänglighet var en del av arbetet, bland annat genom kontraster, typografi och storlekar.</p>
+            <p>Jag definierade gemensamma principer för typografi, ikoner och effekter för att skapa ett konsekvent visuellt uttryck. Tillgänglighet vägdes in i bland annat kontraster, typografiska val och storlekar.</p>
           </div>
 
           <img class="design-system-foundations-image" src="assets/typography-icons-shadows.png" alt="Typografisk skala, ikoner och tre nivåer av skuggor">
