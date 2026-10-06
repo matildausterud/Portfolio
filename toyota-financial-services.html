@@ -27,50 +27,47 @@
 
         <article class="tfs-case-copy">
           <h1 id="tfs-title">Ett gemensamt verktyg för bilaffären</h1>
-          <p class="tfs-case-lead">Hur gör man en komplex bilaffär enkel att hantera?</p>
-          <p>Det här var ett två år långt uppdrag där vi från grunden tog fram Magic Window – en ny plattform för Toyota Financial Services återförsäljare. Teamet bestod av mig, tre produktägare, 10 utvecklare, en backend-arkitekt och en scrum master.</p>
-          <p>Målet var att skapa en gemensam plattform som ersatte flera separata system och samlade bilfinansiering, lagerfinansiering och administration på ett ställe – samtidigt som komplexa processer blev enklare och mer intuitiva för återförsäljaren.</p>
+          <p class="tfs-case-lead">Hur samlar man flera system i en gemensam plattform?</p>
+          <p>Det här var ett två år långt uppdrag där vi från grunden tog fram en ny plattform för Toyotas återförsäljare. Teamet bestod av mig, tre produktägare, 10 utvecklare, en backend-arkitekt och en scrum master.</p>
+          <p>Målet var att skapa en gemensam plattform som ersatte flera separata system och samlade bilfinansiering, lagerfinansiering och administration på ett ställe. Komplexa processer skulle bli enklare och mer intuitiva för återförsäljaren.</p>
         </article>
 
         <section class="tfs-problem" aria-labelledby="tfs-problem-title">
           <div class="tfs-problem-copy">
             <h2 id="tfs-problem-title">Problemet</h2>
             <p class="tfs-section-lead">Från flera system till ett sammanhängande flöde</p>
-            <p>Återförsäljarna behövde använda flera olika system för att hantera bilaffären. Kreditansökningar, finansiering, försäkring och lagerfinansiering hanterades separat trots att de var delar av samma process.</p>
-            <p>Målet var att samla allt i Magic Window – ett gemensamt arbetsverktyg för bilaffären.</p>
+            <p>Återförsäljarna behövde använda flera olika system för att genomföra en bilaffär. Affärsförslag, kreditansökan, försäkring och lagerfinansiering hanterades separat, vilket skapade ett splittrat arbetsflöde med många systembyten och begränsad överblick.</p>
           </div>
 
           <img class="tfs-problem-image" src="assets/tfs-old-systems.png" alt="Gamla separata system som användes i bilaffären">
         </section>
 
-        <section class="tfs-challenge" aria-labelledby="tfs-challenge-title">
+        <section class="tfs-challenge tfs-scope" aria-labelledby="tfs-scope-title">
           <div class="tfs-challenge-copy">
-            <h2 id="tfs-challenge-title">Utmaningen</h2>
-            <p class="tfs-section-lead">Att förstå en komplex verksamhet</p>
-            <p>Eftersom produkten byggdes från grunden behövde jag först förstå både verksamheten och hur återförsäljarna faktiskt arbetade.</p>
+            <h2 id="tfs-scope-title">Omfattningen av plattformen</h2>
+            <p class="tfs-section-lead">Från säljverktyg till en bredare plattform</p>
+            <p>Plattformen växte över tid från att vara ett säljverktyg till att innefatta bilfinansiering, lagerfinansiering och administration. Det innebar fler användargrupper, arbetsflöden och behov inom samma produkt.</p>
+          </div>
+
+          <img class="tfs-scope-flow-image" src="assets/tfs-flow.png?v=2" alt="Plattformens delar inom retail, wholesale och administration">
+
+          <div class="tfs-scope-details">
+            <p><strong>Återförsäljare</strong> skulle kunna följa bilaffären genom systemet och enkelt förstå vad som hade hänt och vad som behövde göras härnäst.</p>
+            <p><strong>Distributörer</strong> skulle kunna hantera och koordinera sina återförsäljare och få överblick över finansierade bilar.</p>
+            <p><strong>Lageransvariga</strong> skulle kunna hantera finansierade fordon och stötta återförsäljare och distributörer genom processen.</p>
+            <p><strong>Administratörer</strong> skulle kunna konfigurera och hantera användare, varumärken och tillhörande avtal för att styra hur plattformen användes.</p>
             <p>Genom intervjuer, workshops och nära samarbete med verksamheten kartlade jag behov, processer och beroenden. Flöden och prototyper testades sedan kontinuerligt med användare och itererades innan utveckling.</p>
-            <p>Intervjuer -> Flöden -> Prototyper -> Användartester -> Iteration</p>
+            <p>Intervjuer → Flöden → Prototyper → Användartester → Iteration</p>
           </div>
 
           <img class="tfs-challenge-image" src="assets/tfs-research.png" alt="Researchmaterial med roller, flöden och prototyper">
-        </section>
-
-        <section class="tfs-magic" aria-labelledby="tfs-magic-title">
-          <div class="tfs-magic-copy">
-            <h2 id="tfs-magic-title">Magic Window</h2>
-            <p class="tfs-section-lead">En plattform för hela bilaffären</p>
-            <p>Magic Window behövde stödja flera delar av återförsäljarens arbete inom samma produkt.</p>
-          </div>
-
-          <img class="tfs-magic-image" src="assets/tfs-flow.png" alt="Flöde för Magic Window med retail, wholesale och admin">
         </section>
 
         <section class="tfs-design" aria-labelledby="tfs-design-title">
           <div class="tfs-design-copy">
             <h2 id="tfs-design-title">Design</h2>
             <p class="tfs-section-lead">Från kalkyl till signerat avtal</p>
-            <p>En stor del av arbetet handlade om att skapa ett tydligt flöde genom en process med mycket information, regler och beroenden.</p>
-            <p>Återförsäljaren skulle kunna följa affären genom systemet och förstå både vad som hade hänt och vad som behövde göras härnäst.</p>
+            <p>En stor del av arbetet handlade om att skapa tydliga flöden genom processer med mycket information, regler och beroenden.</p>
             <p>Jag arbetade bland annat med:</p>
             <p>Kreditansökan · KALP · Försäkring · Fakturor · E-signering med BankID</p>
           </div>
@@ -97,7 +94,7 @@
         <section class="tfs-result" aria-labelledby="tfs-result-title">
           <div class="tfs-result-copy">
             <h2 id="tfs-result-title">Från idé till verkliga bilaffärer</h2>
-            <p>Magic Window gick från idé och tidiga prototyper till en lanserad produkt som började användas av både stora och små återförsäljare.</p>
+            <p>Projektet gick från idé och tidiga prototyper till en lanserad produkt som började användas av både stora och små återförsäljare.</p>
             <p>Kort efter lanseringen hade över 40 bilaffärer genomförts genom den nya lösningen. Feedback från användare pekade också på att flödet upplevdes som intuitivt och självgående.</p>
           </div>
 

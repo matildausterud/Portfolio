@@ -1427,6 +1427,38 @@ img {
   margin: 56px auto 0;
 }
 
+.tfs-scope-flow-image {
+  display: block;
+  width: min(100% - 48px, 786px);
+  margin: 56px auto 0;
+}
+
+.tfs-scope-details {
+  width: min(100% - 48px, 786px);
+  margin: 64px auto 0;
+}
+
+.tfs-scope-details p {
+  max-width: 548px;
+  margin: 0 auto 32px;
+  color: #22242c;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.tfs-scope-details p:last-child {
+  margin-bottom: 0;
+}
+
+.tfs-scope-details strong {
+  font-weight: 600;
+}
+
+.tfs-scope .tfs-challenge-image {
+  width: min(100% - 48px, 786px);
+}
+
 .tfs-magic {
   padding: 0 0 112px;
 }
@@ -2191,6 +2223,16 @@ img {
   .tfs-challenge-image {
     width: 100%;
     margin-top: 56px;
+  }
+
+  .tfs-scope-flow-image,
+  .tfs-scope .tfs-challenge-image {
+    width: 100%;
+    margin-top: 48px;
+  }
+
+  .tfs-scope-details {
+    margin-top: 48px;
   }
 
   .tfs-magic {
