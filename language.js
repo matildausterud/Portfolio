@@ -60,7 +60,7 @@
     "Kreditansökan · KALP · Försäkring · Fakturor · E-signering med BankID": "Credit applications · Household budget calculations · Insurance · Invoices · BankID e-signing",
     "Design system": "Design system",
     "En produkt, flera varumärken": "One product, multiple brands",
-    "Parallellt med produktdesignen byggde jag upp designsystemer från grunden.": "Alongside the product design, I built the design system from the ground up.",
+    "Parallellt med produktdesignen byggde jag upp designsystemet från grunden.": "Alongside the product design, I built the design system from the ground up.",
     "Tokens, properties och variables gjorde det möjligt att skapa ett konsekvent gränssnitt och samtidigt anpassa samma produkt till flera varumärken.": "Tokens, properties and variables made it possible to create a consistent interface while adapting the same product to multiple brands.",
     "Från idé till verkliga bilaffärer": "From idea to real vehicle sales",
     "Projektet gick från idé och tidiga prototyper till en lanserad produkt som började användas av både stora och små återförsäljare.": "The project went from an idea and early prototypes to a launched product used by both large and small dealers.",
